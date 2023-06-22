@@ -6,7 +6,7 @@ namespace Week2_Lesson8
     {
         static void Main(string[] args)
         {
-            /*    //Lesson 8
+                //Lesson 8
                 //Task 1 --- Napisz program, który sprawdzi ile jest liczb pierwszych w zakresie 0 – 100
                 Console.WriteLine("----------Zadanie 1----------");
                 int sumPrimNumbers = 0;
@@ -37,14 +37,13 @@ namespace Week2_Lesson8
                 {
                     if(number2 % 2  == 0)
                     {
-                        //Console.WriteLine($"Liczba {number2} jest parzysta");
+                        Console.WriteLine($"Liczba {number2} jest parzysta");
                     }
                     number2++;
                 }
                 while (number2 <= 1000);
 
                 //Task 3 --- Napisz program, który zaimplementuje ciąg Fibonacciego i wyświetli go na ekranie.
-
                 //0,1,1,2,3,5,8,13,21... 
 
                 Console.WriteLine("----------Zadanie 3----------");
@@ -207,7 +206,8 @@ namespace Week2_Lesson8
             Console.WriteLine("----------Zadanie 9----------");
             Console.WriteLine("Podaj liczbe:");
             int number3 = Int32.Parse(Console.ReadLine());
-            string binNumber = "", binNumber2 = "";
+            string binNumber = "";
+            string binNumber2 = "";
             while(number3 >= 1)
             {
                 if (number3 % 2 == 0)
@@ -235,8 +235,10 @@ namespace Week2_Lesson8
             int a = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Podaj liczbe 2:");
             int b = Int32.Parse(Console.ReadLine());
-            int temp2, nww;
-            int nwd_a = a, nwd_b = b;
+            int temp2;
+            int nww;
+            int nwd_a = a;
+            int  nwd_b = b;
             while (nwd_b != 0)
             {
                 temp2 = nwd_b;
