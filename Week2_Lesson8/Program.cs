@@ -119,61 +119,60 @@ namespace Week2_Lesson8
 
             Console.WriteLine("Podaj liczbe:");
             int diagonal = Int32.Parse(Console.ReadLine());
-                           
+            int rows = diagonal / 2; ;                 
             if (diagonal % 2 != 0 )
             {
-                diagonal /= 2;
-                for (int i = diagonal; i > 0; i--)
+                
+                for (int i = rows; i > 0; i--)
                 {
                     for (int j = i; j > 0; j--)
                     {
-                        Console.Write("-");
+                        Console.Write(" ");
                     }
-                    for (int k = (diagonal - i) * 2 + 1; k > 0; k--)
+                    for (int k = (rows - i) * 2 + 1; k > 0; k--)
                     {
-                        Console.Write("+");
+                        Console.Write("*");
                     }
                     Console.WriteLine("");
                 }
 
-                for (int i = 0; i < diagonal + 1; i++)
+                for (int i = 0; i < rows + 1; i++)
                 {
                     for (int j = 0; j < i; j++)
                     {
-                        Console.Write("-");
+                        Console.Write(" ");
                     }
-                    for (int k = (diagonal - i) * 2 + 1; k > 0; k--)
+                    for (int k = (rows - i) * 2 + 1; k > 0; k--)
                     {
-                        Console.Write("+");
+                        Console.Write("*");
                     }
                     Console.WriteLine("");
                 }
             }
-            if(diagonal % 2 == 0)
-            {
-                diagonal /= 2;
-                for (int i = diagonal; i > 1; i--)
+            else
+            {               
+                for (int i = rows; i > 1; i--)
                 {
                     for (int j = i; j > 1; j--)
                     {
-                        Console.Write("-");
+                        Console.Write(" ");
                     }
-                    for (int k = (diagonal - i) * 2 + 1; k >= 0; k--)
+                    for (int k = (rows - i) * 2 + 1; k >= 0; k--)
                     {
-                        Console.Write("+");
+                        Console.Write("*");
                     }
                     Console.WriteLine("");
                 }
 
-                for (int i = 1; i < diagonal + 1; i++)
+                for (int i = 1; i < rows + 1; i++)
                 {
                     for (int j = 1; j < i; j++)
                     {
-                        Console.Write("-");
+                        Console.Write(" ");
                     }
-                    for (int k = (diagonal - i) * 2 + 1; k >= 0; k--)
+                    for (int k = (rows - i) * 2 + 1; k >= 0; k--)
                     {
-                        Console.Write("+");
+                        Console.Write("*");
                     }
                     Console.WriteLine("");
                 }
